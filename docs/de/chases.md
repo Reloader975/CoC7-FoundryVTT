@@ -1,155 +1,154 @@
 <!--- This file is auto generated from module/manual/de/chases.md -->
-*TODO: Will be translated*
 
-# Creating a new chase
+# Erstellen einer Neuen Verfolgungsjagd
 
-To create a chase create a new item of type chase.
+Um eine neue Verfolgungsjagd zu initiieren, erstellen Sie ein Item vom Typ Verfolgungsjagd. 
 
-Only the keeper should have access to that item.
+Nur der Spielleiter sollte Zugriff auf das Item haben. 
 
-A chase is composed of a succession of locations. Each location can be separated by an obstacle (barrier or hazard).
+Eine Verfolgungsjagd ist zusammengestellt aus einer Folge von Orten. Jeder Ort kann durch eine Hürde (Hindernis oder Gefahr) von einem anderen getrennt werden. 
 
-A hazard will always be crossed but failing the check will slow you down.
+Eine Gefahr wird immer überwunden, eine nicht geschaffte Probe wird Sie jedoch ausbremsen. 
 
-A barrier will stop you until you successfully pass or destroy it.
+Ein Hindernis wird Sie stoppen, bis Sie es erfolgreich überwinden, oder es zerstören. 
 
 ![](../../../assets/manual/chases/new_chase.webp)
 
-The chase sheet is divided in 3 parts.
+Der Verfolgungsjagdbogen ist aufgeteilt in 3 Teile. 
 
-- A header where you will see information about current location once a chase is started.
-- A chase setup tab. This will allows you to create and follow the chase.
-- A participant list where you can setup your participant. This tab will not work after the chase started.
+- In einer Kopfzeile werden Sie die Information des aktuellen Ortes sehen, sobald die Verfolgungsjagd gestartet ist. 
+- Ein Reiter Verfolgungsjagd einrichten. Dieser erlaubt es Ihnen die Erstellung und Verfolgung der Verfolgungsjagd. 
+- Eine Teilnehmerliste, in welcher Sie die Teilnehmenden hinzufügen können. Dieser Reiter wird nicht mehr funktionieren, sobald die Verfolgungsjagd gestartet ist. 
 
-# Adding a participant.
+# Einen Teilnehmer hinzufügen
 
-To add a participant click on the plus sign on the participant list or drag an actor or a token.
+Um einen Teilnehmer hinzuzufügen klicken Sie auf das Plus Zeichen der Teilnehmerliste oder Ziehen Sie einen Akteur bzw. einen Token darauf. 
 
-Note that it is not mandatory to have a actor associated with a participant. This will allows for fast setup or to add someone on the fly to the chase.
+Beachten Sie, dass es nicht zwingend notwendig ist, einen Akteur mit einem Teilnehmer zu verbinden. Dies erlaubt es, eine Verfolgungsjagd schnell aufsetzen oder jemanden spontan hinzuzufügen. 
 
-To be able to add a token to the chase a few control have been added to character and NPC sheets:
+Um in der Lage zu sein, einen Token zur Verfolgungsjagd hinzuzufügen wurden einige Bedienelemente dem Charakterbogen, sowie dem NSC-Bogen hinzugefügt: 
 
 ![](../../../assets/manual/chases/new_controls.webp)
 
-Those icons will give additional information.
+Diese Icons geben zusätzliche Informationen. 
 
-1. Indicate that this actor is a synthetic actor (instance of an actor)
-2. Indicate that actor's data are not linked. Each instance of that actor has his own properties.
-3. Indicate that this actor has an associated token. **You can drag and drop this onto a chase location or on the participant list**.
-4. Indicate that actor's data are linked to an actor in the actors directory.
+1. Kennzeichnet, dass dieser Akteur ein synthetischer Akteur ist (Instanz eines Akteurs)
+2. Kennzeichnet, dass die Akteurdaten nicht verknüpft sind. Jede Instanz des Akteurs hat seine eigenen Eigenschaften. 
+3. Kennzeichnet, dass dieser Akteur ein ensprechendes Token hat. **Sie können dieses auf die Verfolgung oder die Teilnehmerliste ziehen und ablegen**. 
+4. Kennzeichnet, dass die Akteurdaten verknüpft sind mit dem Akteur im Akteur-Verzeichnis. 
 
-Here you can set up your participant. Dragging an actor from the Actors sidebar will set the details. Note that you can select a different initiative and speed check. This is non standard in the CoC, but allows to setup unusual chases (futuristic matrix chase, dreamlands chase...)
+Hier können Sie ihre Teilnehmer festlegen. Das Ziehen eines Charakters aus der Akteur Seitenleiste wird die Details festlegen. Beachten Sie, dass Sie eine abweichende Initiative und Geschweindigkeitsprüfung auswählen können. Dies ist nicht der Standard in CoC, aber erlaubt ein Setup ungewöhnlicher Verfolgungsjagden (futuristische Matrix Verfolgungsjagd, Traumlande Verfolgungsjagd, ...)
 
-![](../../../assets/manual/chases/new_participant_drag.webp)
+![](../../../assets/manual/chases/new_participants_drag.webp)
 
-1. Dragging the questionmark onto a token will set the details to that token.
+1. Wenn Sie das Fragezeichen auf den Token ziehen werden die Details dem Token zugeordnet. 
 
-Once you drag an actor or select a token you can set up the participant
+Sobald Sie einen Akteur Ziehen oder ein Token auswählen können Sie den Teilnehmer einrichten. 
 
 ![](../../../assets/manual/chases/new_participant_setup.webp)
 
-1. Clicking this will change the participant side from prey to chaser.
-2. Clicking this will trigger a speed check. Note that there will be no player entries necessary nor any roll card displayed.
+1. Wenn Sie dies Klicken wird der Teilnehmer die Seite wechseln vom Gejagten zum Jäger.
+2. Wenn Sie dies Klicken wird dies eine Geschwindigkeitsprobe auslösen. Beachten Sie, dass dabei weder Spielereinträge notwendig sind noch eine Würfelproben als Nachricht angezeigt wird. 
 
-# Participant list
+# Teilnehmerliste 
 
 ![](../../../assets/manual/chases/participant_list.webp)
 
-Here you can have the list of participant to the chase.
+Hier können Sie die Liste der Teilnehmer an der Verfolgungsjagd einsehen.
 
-1. Will trigger a chase roll. This will create a roll card if the participant has an associated actor (it's not a dummy). Holding shift will fast forward and solve the card.
-2. This will clear the speed roll if any, or delete the participant.
+1. Dies wird einen Verfolgungsprobe auslösen. Dies wird eine Würfelwurfnachricht erstellen, falls der Teilnehmer einen zugeordneten Akteur hat (und es kein `Dummy` ist). Das Halten der Umschalttaste wird das Modifikationsfenster überspringen und den Wurf ausführen. 
+2. Dies wird die Geschwindigkeitsprobe leeren, falls einer existiert, oder den Teilnehmer löschen. 
 
 ![](../../../assets/manual/chases/participant_list_2.webp)
 
-1. Roll card waiting to get resolved in the chat.
-2. Speed check rolled. You can click this to get the details.
-3. To reset the speed check.
+1. Probennachricht wartet im Nachrichtenbereich ausgeführt zu werden.
+2. Geschwindigkeitsprobe wird gewürfelt. Sie können für mehr diese Anklicken für mehr Details.
+3. Die Geschwindigkeitsprobe zurücksetzten. 
 
-![](../../../assets/manual/chases/roll_card.webp)
+![](../../../assets/manual/chases/_roll_card.webp)
 
-# Chase setup
+# Verfolgungsjagd Setup
 
 ![](../../../assets/manual/chases/chase_init.webp)
 
-To setup a chase enter the initial numbers of locations and click initialize.
+Um eine Verfolgungsjagd aufzusetzen geben Sie die Anzahl der Orte ein und klicken Sie auf initialisieren. 
 
 ![](../../../assets/manual/chases/chase_initialized.webp)
 
-The chase is initialized, you can adjust some options. Locations in white are initial locations and can not be modified.
+Die Verfolgungsjagd ist initialisiert, nun können Sie einige Optionen anpassen. Orte in weiß sind initiale Orte und können nicht modifiziert werden. 
 
-1. This is the chase track, the location in white are initials locations. The location in grey are actual chase locations.
-2. Selecting this will include in the chase participants who would have otherwise been able to escape.
-3. Selecting this will include in the chase participants who would have been excluded for being too slow.
-4. This is the number of locations between the slowest prey and the fastest chaser.
-5. This is the starting location of the fastest prey. Setting this to 0 will place him just before the start. 1 will place him at the start. -1 will place him 1 location before the start.
-6. This will animate token when they move to a new location.
+1. Dies ist die Übersicht der Verfolgungsjagd, weiße Orte sind initiale Orte. Die grauen Orte sind die aktiven Verfolgungsjagdorte. 
+2. Durch diese Auswahl werden die Teilnehmer berücksichtigt, welchen es sonst möglich wäre zu entkommen. 
+3. Durch diese Auswahl werden die Teilnehmer berücksichtigt, welche ausgeschlossen worden wären, weil sie zu langsam waren. 
+4. Dies ist die Anzahl der Orte zwischen dem langsamsten Gejagten und dem schnellsten Verfolger. 
+5. Dies ist der Startpunkt des schnellsten Gejagten. Wenn Sie dies auf 0 festlegen, wird das den Gejagten kurz vor dem Startpunkt platzieren. 1, wird ihn auf dem Startpunkt platzieren. -1, wird ihn 1en Ort for dem Start platzieren. 
+6. Dies wird die Token animieren bei der Bewegung zu einem neuen Ort. 
 
-# Setting up locations
+# Das Aufsetzten von Orten
 
-During setup or during chase you can select a location to modify it.
+Während des Aufsetzens oder der Jagd können sie Orte auswählen um diese zu modifizieren. 
 
-Starting (white) locations can not be modified during setup.
+(Weiße) Startpunkte können während des Aufsetzens nicht modifiziert werden. 
 
-To modify a location select it by clicking on it. This will display the location details on the header part of the sheet.
+Um einen Ort zu modifizieren, wählen sie diesen durch Klicken darauf aus. Dies wird die Einzelheiten des Ortes im Kopfbereich des Bogens darstellen. 
 
 ![](../../../assets/manual/chases/setting_locations_1.webp)
 
-1. This will add a participant. If the chase is started the participant will be on that location. If the chase isn't started the participant will be added on the init track.
-2. This will remove the location. A location has to be empty to be removed.
-3. You can drag this and drop it on a scene. This will set the coordinates for that location. A red pin indicate that coordinates has been set. Right clicking a red pin will reset it's coordinate. If coordinates are set, and a participant with an associated token enter that location his token will be moved to that location.
-4. Add a new location.
-5. Active location.
+1. Dies wird einen Teilnehmer hinzufügen. Falls die Verfolgungsjagd gestartet wird, wird sich der Teilnehmer auf dieser Position befinden. Falls die Verfolgungsjagd nicht gestartet ist, wird der Teilnehmer auf der Einstiegsposition hinzugefügt. 
+2. Dies wird den Ort entfernen. Ein Ort muss leer sein, dass er gelöscht werden kann. 
+3. Sie können dies auf eine Szene ziehen und ablegen. Dies wird die Koordinaten des Ortes definieren. Eine rote Stecknadel zeigt an, dass die Koordinaten gesetzt wurden. Ein Rechtsklick auf eine rote Stecknadel wird dessen Koordinaten zurücksetzten. Falls Koordinaten gesetzt wurden und ein Teilnehmer mit einem entsprechenden Token den Ort betritt, wird sein Token auf den Ort bewegt.  
+4. Fügen Sie einen neuen Ort hinzu. 
+5. Aktivieren Sie den Ort. 
 
-# Setting up obstacles.
+# Das Aufsetzen von Hindernissen
 
-You can add obstacle after and before a location. You can pre-fill an obstacle with a name, an associated check and some penalties.
+Sie können Hindernisse vor und nach einem Ort hinzufügen. Sie können ein Hindernis vorab mit einem Namen, einer entsprechenden Probe und einigen Nachteilen befüllen. 
 
 ![](../../../assets/manual/chases/setting_locations_2.webp)
 
-1. Toggle this to add damage to a barrier.
-2. Barrier's hit points.
-3. Movement action cost in case of failure.
-4. Check used to pass the location. When it's red the active actor does not have the associated check.
+1. Schalten Sie dies um, um einem Hindernis Schaden zuzufügen. 
+2. Die Trefferpunkte des Hindernisses
+3. Die Bewegungskosten im Falle eines Fehlschlags
+4. Die Probe, die notwendig ist das Hindernis zu überwinden. Falls es rot ist, hat der aktive Akteur keine solche entsprechende Probe. 
 
-# Cut to the chase.
+# Zur Sache kommen
 
-When you are ready you can cut to the chase. If not all participant have a speed check this will trigger a warning and will not let you start.
+Wenn Sie bereit sind, können Sie zum Sache kommen. Falls nicht alle Teilnehmer eine Geschwindigkeitsprobe durchgeführt haben wird dies eine Warnung erzeugen und Sie nicht starten lassen. 
 
 ![](../../../assets/manual/chases/cut_to_the_chase_1.webp)
 
-1. Initiative track. The active participant is circled in orange.
-2. Chase track. Active location and participant. You can drag drop participant from the chase track to move them freely. You can drag a new actor or token directly on the chase track. This will pop the import window and add that participant to the chase. In some cases (eg. new prey slower than the slowest participant) all movement action will be recalculated.
-3. A barrier.
-4. A hazard.
+1. Aktionsschiene. Der aktive Teilnehmer orange umkreist. 
+2. Verfolgungsjagd. Aktiver Ort und Teilnehmer. Sie können Teilnehmer ziehen und ablegen von der Verfolgungsjagd um diese frei zu bewegen. Sie können einen neuen Akteur oder Token direkt in die Verfolgungsjagd ziehen. Dies wird ein Importfenster öffnen und den Teilnehmer zur Verfolgungsjagd hinzufügen. In einigen Fällen (z. B. wenn ein neuer Gejagter langsamer ist als der langsamste Teilnehmer) werden alle Bewegungsaktionen neu berechnet. 
+3. Ein Hindernis
+4. Eine Gefahr
 
-# Obstacle resolution flow
+# Ablauf des Überwindens des Hindernisses
 
 ![](../../../assets/manual/chases/cut_to_the_chase_2.webp)
 
-1. When the active participant is facing an obstacle you can trigger the obstacle resolution flow by clicking this. This will open a chat card where keeper and player can interact to pass that obstacle. All changes made to the card can be reflected to the obstacle in the chase at the end of the flow.
+1. Wenn der aktive Teilnehmer auf ein Hindernis trifft, können Sie den Ablauf des Überwindens des Hindernisses auslösen, wenn Sie dies Klicken. Es wird eine Nachricht erstellen, mit welcher Spielleiter und Spieler interagieren können um das Hindernis zu überwinden. Alle Änderungen an der Chatnachricht können auf das Hindernis der Verfolgungsjagd zurückgeworfen werden am Ende des Ablaufes. 
 
-Here is a shorten flow example:
+Im Folgenden ein kurzes Ablaufbeispiel: 
 
 ![](../../../assets/manual/chases/obstalce_flow_1.webp)
 ![](../../../assets/manual/chases/obstalce_flow_2.webp)
 ![](../../../assets/manual/chases/obstalce_flow_3.webp)
 ![](../../../assets/manual/chases/obstalce_flow_4.webp)
 
-Once the flow is complete all changes are send to the chase.
+Wenn der Ablauf komplettiert ist, werden alle Änderungen an die Verfolgungsjagd gesendet. 
 
 ![](../../../assets/manual/chases/cut_to_the_chase_3.webp)
 
-This round is finished. All actor have spent their movement action. You can click Next round to proceed.
+Die Runde ist abgeschlossen. Alle Charaktere haben ihre Bewegungsaktionen aufgebraucht. Sie können nächste Runde anklicken, um weiterzumachen. 
 
-# Participant controls.
+# Teilnehmersteuerung
 
 ![](../../../assets/manual/chases/participant_controls.webp)
 
-You can modify or move a participant by using the controls button on his card.
+Sie können einen Teilnehmer modifizieren oder bewegen durch das Verwenden der Steuerungsknöpfe auf der Karte. 
 
-1. Those 3 icons will allow to delete, modify and activate a participant.
-2. Movement action. A yellow is available, grey is consumed, red is a deficit.
-3. This will control your participant bonus. He can draw a gun or be awarded bonus dices.
-4. Movement action controls. Here you can increase or decrease movement actions.
-5. Movement controls. You can move backward or forward. You can assist an ally (consume an action and give a bonus die) or take a cautious approach.
+1. Diese 3 Icons erlauben es den Teilnehmer zu löschen, modifizieren und zu aktivieren. 
+2. Bewegungsaktion. Gelb ist verfügbar, Grau ist verbraucht, rot ist ein Defizit. 
+3. Dies kontrolliert den Bonus Ihres Teilnehmers. Er kann eine Waffe ziehen oder einen Bonuswürfel gewähren. 
+4. Bewegungsaktionssteuerung. Hier können Sie die Bewegungsaktionen erhöhen oder verringern. 
+5. Bewegungssteuerung. Sie können sich rückwärts oder vorwärts bewegen. Sie können einen Verbündeten unterstützen (verbrauchen Sie dazu eine Aktion und gewähren Sie einen Bonuswürfel) oder gehen Sie behutsam vor. 
